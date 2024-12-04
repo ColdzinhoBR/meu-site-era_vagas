@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Era Vargas - Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo geral para os links */
+        .module-button {
+            display: inline-block;
+            background-color: #4CAF50; /* Cor de fundo verde */
+            color: white; /* Cor do texto */
+            padding: 10px 20px; /* Espaçamento interno */
+            margin: 10px 0; /* Espaçamento entre os botões */
+            text-align: center;
+            text-decoration: none; /* Remove sublinhado */
+            border-radius: 5px; /* Bordas arredondadas */
+            font-size: 18px;
+            transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+        }
+
+        /* Efeito quando o botão é hover (passa o mouse sobre ele) */
+        .module-button:hover {
+            background-color: #45a049; /* Cor mais escura quando passar o mouse */
+        }
+
+        /* Espaçamento entre os botões */
+        .module-button + .module-button {
+            margin-top: 15px;
+        }
+          /* CSS para a página principal */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004d4d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.module-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.module-button {
+    background-color: #009999;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.module-button:hover {
+    background-color: #007777;
+}
+
+footer {
+    background-color: #004d4d;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.content-module {
+    display: none;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.active {
+    display: block;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Ajustes para tablets e celulares */
+    header h1 {
+        font-size: 20px;
+    }
+
+    .back-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .content {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .module-button {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin: 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para celulares pequenos */
+    header h1 {
+        font-size: 18px;
+    }
+
+    .back-button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .content h2 {
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 13px;
+    }
+
+    .module-button {
+        font-size: 14px;
+        padding: 6px 12px;
+        width: 100%; /* Botões ocupam toda a largura no celular */
+        margin: 5px 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Era Vargas - A Economia Brasileira</h1>
+        <p>Explore os principais temas sobre a Era Vargas e sua influência na economia brasileira.</p>
+        
+        <a href="modulo1.html" target="_blank" class="module-button">Desafios Econômicos</a>
+        <a href="modulo2.html" target="_blank" class="module-button">As mudanças promovidas por Vargas
+        </a>
+        <a href="modulo3.html" target="_blank" class="module-button">Contexto da Segunda Guerra Mundial no Brasil</a>
+        <a href="modulo4.html" target="_blank" class="module-button">criação de empregos e urbanização</a>
+        <a href="modulo5.html" target="_blank" class="module-button">Pressão inflacionária e ajustes econômicos </a>
+       
+    </header>
+    
+    <footer>
+        <p>&copy; 2024 - Era Vargas</p>
+    </footer>
+</body>
+</html>
